@@ -1,0 +1,199 @@
+/*=====РАЗМЕТКА ДЛЯ INDEX.HTML========*/
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #757575;
+}
+
+:root {
+  --main-title-color: #ffffff;
+  --title-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --secondary-background-color: #2f303a;
+  --other-background-color: #f5f4fa;
+}
+
+/*список не маркированный*/
+.list {
+  list-style: none;
+}
+/*ссылки без подчеркивания*/
+.link {
+  text-decoration: none;
+}
+/*=====HEADER======*/
+/*Логотип в HEDER*/
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.header-logo-accent {
+  color: var(--title-color);
+}
+/*Навигация в HEDER*/
+.header-nav-link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+/*Почта телефон в шапке*/
+.header-contact-link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--accent-color);
+}
+/*======MAIN=====*/
+/*Hero*/
+.hero {
+  background-color: var(--secondary-background-color);
+}
+.hero-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--main-title-color);
+}
+.hero-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  vertical-align: center;
+  color: var(--main-title-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+/*Наши преимущества
+Внимание к деталям\Пунктуальность\Планирование\Современные технологии*/
+.benefits-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+.benefits-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+/*Чем мы занимаемся*/
+.work-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-color);
+}
+/*Наша команда*/
+.employees {
+  background-color: var(--other-background-color);
+}
+.employees-item {
+  background-color: var(--main-title-color);
+}
+.employees-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-color);
+}
+.employees-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.employees-position {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+/*--FOOTER--*/
+.footer {
+  background-color: var(--secondary-background-color);
+}
+.footer-logo-accent {
+  color: var(--main-title-color);
+}
+.footer-addr-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+.footer-mail-link,
+.footer-phone-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*=====РАЗМЕТКА ДЛЯ ПОРТФОЛИО========*/
+/*ККНОПКИ*/
+.portfolio-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-colorr);
+  background-color: var(--other-background-color);
+  cursor: pointer;
+}
+.portfolio-button:hover,
+.portfolio-button :focus {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--main-title-color);
+  background-color: var(--accent-color);
+}
+/*КАРТОЧКИ*/
+.cards-h {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.cards-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
