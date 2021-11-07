@@ -4,6 +4,7 @@
   --title-color: #212121;
   --text-color: #757575;
   --accent-color: #2196f3;
+  --accent-button-color: #188ce8;
   --secondary-background-color: #2f303a;
   --other-background-color: #f5f4fa;
 }
@@ -33,7 +34,8 @@ body {
 .header-logo-accent {
   color: var(--title-color);
 }
-/*Навигация в HEDER*/
+/*====Навигация в HEDER====*/
+
 .header-nav-link {
   font-size: 14px;
   font-weight: 500;
@@ -43,6 +45,10 @@ body {
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
+  color: var(--accent-color);
+}
+/* Подсвечивает текущую страницу  */
+.header-nav-activ {
   color: var(--accent-color);
 }
 /*Почта телефон в шапке*/
@@ -81,6 +87,10 @@ body {
   color: var(--main-title-color);
   background-color: var(--accent-color);
   cursor: pointer;
+}
+.hero-button:focus,
+.hero-button:hover {
+  background-color: var(--accent-button-color);
 }
 /*Наши преимущества
 Внимание к деталям\Пунктуальность\Планирование\Современные технологии*/
@@ -171,7 +181,7 @@ body {
   cursor: pointer;
 }
 .portfolio-button:hover,
-.portfolio-button :focus {
+.portfolio-button:focus {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
