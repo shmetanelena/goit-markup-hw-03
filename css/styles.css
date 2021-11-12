@@ -70,11 +70,8 @@ body {
   width: 1200px; 
   margin: 0 auto;
   padding: 0 15px;
-  background-color: rgb(255, 47, 210);
  }
 /*=====HEADER======*/
-/*Логотип в HEDER*/
-
 .header {
   align-items: center;
   border-bottom-width: 1px solid #ECECEC;
@@ -84,15 +81,13 @@ body {
   margin: 0 auto;
   width: 1200px;
   align-items: center; 
-  
-  background-color: greenyellow; 
 }
+/*Логотип в HEDER*/
 .logo {
   min-height: 31px;
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
-  min-height: 31px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -157,7 +152,6 @@ body {
 .header-contact-item:not(:last-child) {
   margin-right: 50px;
 }
-   
 
 .header-contact-link:hover,
 .header-contact-link:focus {
@@ -166,14 +160,10 @@ body {
 /*======MAIN=====*/
 /*Hero*/
 .hero {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-content: center; */
   min-height: 600px;
   margin-top: 0;
   padding-top: 200px;
   padding-bottom: 200px;
-  /* text-align: center; */
   text-align: center;
   background-color: var(--secondary-background-color);
 }
@@ -213,7 +203,6 @@ body {
 .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: tomato;
 }
 .benefits-title {
   margin-top: 0;
@@ -246,7 +235,6 @@ body {
 }
 /*Чем мы занимаемся*/
 .work {
- background-color: violet;
  padding-bottom: 94px;
 }
 .work-title {
@@ -271,6 +259,7 @@ body {
 }
 .employees-item {
   background-color: var(--main-title-color);
+
 }
 /* Наша команда */
 .employees-title {
@@ -291,6 +280,7 @@ body {
   color: var(--title-color);
 }
 .employees-position {
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -310,9 +300,24 @@ body {
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
 }
+
+.footer-logo {
+  margin-bottom: 20px;
+  min-height: 31px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
 .footer-logo-accent {
   color: var(--main-title-color);
 }
+.footer-addr-list {
+  flex-direction: column;
+  margin-bottom: 9px;
+}
+
 .footer-addr-link {
   font-size: 14px;
   font-style: normal;
@@ -322,6 +327,8 @@ body {
 }
 .footer-mail-link,
 .footer-phone-link {
+  /* display: block; */
+  /* margin-bottom: 9px; */
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
