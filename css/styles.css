@@ -165,10 +165,9 @@ body {
 }
 /*======MAIN=====*/
 /*Hero*/
-
 .hero {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   /* align-content: center; */
   min-height: 600px;
   margin-top: 0;
@@ -182,33 +181,23 @@ body {
   width: 696px;
   height: 120px;
   margin: 0 auto 30px auto;
-
-  /* margin-top: 0; */
-  /* margin-bottom: 30px; */
-  font-size: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  line-height: 1.36;
   letter-spacing: 0.06em;
-  align-self: center;
   text-transform: uppercase;
   text-align: center;
   color: var(--main-title-color);
 }
 .hero-button {
   display: inline-block;
-  /* margin-bottom: 200px; */
-  /* padding: 10px 32px; */
   width: 200px;/* минимальная ширина кнопки, чб избежать переполнения*/
   min-height: 50px;
   border-radius: 4px;
-  
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  /* vertical-align: center; */
   color: var(--main-title-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -222,13 +211,14 @@ body {
 /*Наши преимущества
 Внимание к деталям\Пунктуальность\Планирование\Современные технологии*/
 .benefits {
-  background-color: tomato;
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: tomato;
 }
 .benefits-title {
   margin-top: 0;
   margin-bottom: 10px;
+  width: 270px;
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 10px;
@@ -238,6 +228,9 @@ body {
   /* text-align: left;  */
   text-transform: uppercase;
   color: var(--title-color);
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
 }
 /* сбросила отступы для описаний преимуществ */
 .benefits-item p {
