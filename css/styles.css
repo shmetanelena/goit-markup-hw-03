@@ -8,23 +8,86 @@
   --secondary-background-color: #2f303a;
   --other-background-color: #f5f4fa;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Обнуляю margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--main-title-color);
   color: var(--text-color);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* скрыла заголовок в секции Наши преимущества*/
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+}
 /*список не маркированный*/
 .list {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 /*ссылки без подчеркивания*/
 .link {
   text-decoration: none;
 }
+
+
 /*=====HEADER======*/
 /*Логотип в HEDER*/
+
+.header {
+  align-items: center;
+  border-bottom-width: 1px solid #ECECEC;
+  /* ??????   height: 80px;  ????? */
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .logo {
+  min-height: 31px;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  min-height: 31px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -34,15 +97,35 @@ body {
 .header-logo-accent {
   color: var(--title-color);
 }
-/*====Навигация в HEDER====*/
 
+/*====Навигация в HEDER====*/
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+ .header-item:not(:last-child) {
+  margin-right: 50px;
+}
+/* ссылки на студия/контакты/портфолио */
 .header-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* align-items: center;  */
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
+
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--accent-color);
@@ -51,34 +134,57 @@ body {
 .header-nav-activ {
   color: var(--accent-color);
 }
-/*Почта телефон в шапке*/
+/*АВТОРИЗАЦИЯ
+Почта телефон в шапке*/
+.header-contact {
+  display: flex;
+  margin-left: auto; 
+}
+/* хедер - ссылки на маил и телефон */
 .header-contact-link {
-  font-size: 14px;
+  display: block; 
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 14px; 
   font-weight: 500;
   line-height: 1.14;
   font-style: normal;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+/* .header-contact-link:not(:last-child) {
+  margin-left: 50px;
+} */
+
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--accent-color);
 }
 /*======MAIN=====*/
 /*Hero*/
+
 .hero {
+  align-content: center;
   background-color: var(--secondary-background-color);
+  text-align: center;
 }
 .hero-title {
-  font-size: 44px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
+  /* text-align: center; */
   color: var(--main-title-color);
 }
 .hero-button {
+  display: inline-block;
+  margin-bottom: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;/* минимальная ширина кнопки, чб избежать переполнения*/
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
@@ -92,17 +198,33 @@ body {
 .hero-button:hover {
   background-color: var(--accent-button-color);
 }
+
 /*Наши преимущества
 Внимание к деталям\Пунктуальность\Планирование\Современные технологии*/
+.benefits {
+  background-color: tomato;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .benefits-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  /* text-align: left; */
+  /* text-align: left;  */
   text-transform: uppercase;
   color: var(--title-color);
 }
+/* сбросила отступы для описаний преимуществ */
+.benefits-item p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .benefits-text {
   font-size: 14px;
   line-height: 1.71;
@@ -110,7 +232,13 @@ body {
   text-align: left;
 }
 /*Чем мы занимаемся*/
+.work {
+ background-color: violet;
+ padding-bottom: 94px;
+}
 .work-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -121,11 +249,16 @@ body {
 /*Наша команда*/
 .employees {
   background-color: var(--other-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .employees-item {
   background-color: var(--main-title-color);
 }
+/* Наша команда */
 .employees-title {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
