@@ -25,14 +25,8 @@ h5,
 h6,
 ul,
 p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  background-color: var(--main-title-color);
-  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 img {
@@ -53,11 +47,6 @@ img {
   overflow: hidden;
 }
 
-.container {
-width: 1200px;
-margin: 0 auto;
-padding: 0 15px;
-}
 /*список не маркированный*/
 .list {
   display: flex;
@@ -70,18 +59,29 @@ padding: 0 15px;
   text-decoration: none;
 }
 
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--main-title-color);
+  color: var(--text-color);
+}
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  }
 /*=====HEADER======*/
 /*Логотип в HEDER*/
 
 .header {
   align-items: center;
   border-bottom-width: 1px solid #ECECEC;
-  /* ??????   height: 80px;  ????? */
 }
 .header-container {
   display: flex;
+  width: 1200px;
   align-items: center;
+  background-color: greenyellow;
 }
 .logo {
   min-height: 31px;
@@ -107,8 +107,6 @@ padding: 0 15px;
 
 .header-nav {
   display: flex;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
 }
 
  .header-item:not(:last-child) {
