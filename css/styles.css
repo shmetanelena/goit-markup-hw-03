@@ -8,7 +8,8 @@
   --secondary-background-color: #2f303a;
   --other-background-color: #f5f4fa;
 }
-
+/* Глобальный border-box 
+устанавливается для всех элементов и псевдоэлементов*/
 *,
 *::before,
 *::after {
@@ -106,8 +107,8 @@ padding: 0 15px;
 
 .header-nav {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 }
 
  .header-item:not(:last-child) {
@@ -118,7 +119,6 @@ padding: 0 15px;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  /* align-items: center;  */
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -152,9 +152,10 @@ padding: 0 15px;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-/* .header-contact-link:not(:last-child) {
-  margin-left: 50px;
-} */
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+    
 
 .header-contact-link:hover,
 .header-contact-link:focus {
