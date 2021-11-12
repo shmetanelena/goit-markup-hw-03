@@ -23,48 +23,48 @@
   <body>
     <!--HEADER-->
     <header class="header">
-      <nav>
-        <a href="/" class="logo link"
-          >Web<span class="header-logo-accent">Studio</span></a
-        >
-
-        <ul class="header-nav list">
-          <li class="header-nav-item">
-            <a class="header-nav-link link" href="./index.html" target="_self"
-              >Студия</a
+      <div class="conteiner header-container"> 
+        <nav class="header-navigation">
+          <a href="/" class="logo link"
+            >Web<span class="header-logo-accent">Studio</span></a
+          >
+  
+          <ul class="header-nav list">
+            <li class="header-item">
+              <a class="header-nav-link link header-nav-activ" href="">Студия</a>
+            </li>
+            <li class="header-item">
+              <a
+                class="header-nav-link link"
+                href="./portfolio.html"
+                target="_self"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header-item"><a class="header-nav-link link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <!-- Авторизация -->
+        
+        <ul class="header-contact list">
+          <li class="header-contact-item">
+            <a class="header-contact-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
-          <li class="header-nav-item">
-            <a
-              class="header-nav-link link header-nav-activ"
-              href="./portfolio.html"
-              target="_self"
-              >Портфолио</a
+          <li class="header-contact-item">
+            <a class="header-contact-link link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
             >
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link link" href="">Контакты</a>
           </li>
         </ul>
-      </nav>
-
-      <ul class="header-contact list">
-        <li class="header-contact-item">
-          <a class="header-contact-link link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contact-item">
-          <a class="header-contact-link link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      
+      </div>
     </header>
 
     <main>
       <section class="portfolio">
-        
+
         <!--Скрыла название заголовка секции с помощью hidden-->
         <h1 class="portfolio-headline" hidden>Примеры наших работ</h1>
         <ul class="portfolio-list list">
@@ -213,32 +213,34 @@
 
     <!--Футер-->
     <footer class="footer">
-      <a class="logo link" href="/"
+      <div class="conteiner">
+       <a class="link footer-logo" href="/"
         >Web<span class="footer-logo-accent">Studio</span></a
-      >
+       >
 
-      <address class="footer-addr">
-        <ul class="footer-addr-list list">
-          <li>
-            <a
+        <address class="footer-addr">
+          <ul class="footer-addr-list list">
+            <li>
+              <a
               class="footer-addr-link link"
               href="https://goo.gl/maps/nk7uNHykZLFtEG5r5"
               target="_blank"
               >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li>
-            <a class="footer-mail-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="footer-phone-link link" href="tel:+380961111111"
+              >
+            </li>
+            <li>
+              <a class="footer-mail-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="footer-phone-link link" href="tel:+380961111111"
               >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
