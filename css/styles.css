@@ -66,7 +66,7 @@ body {
   
 }
  .conteiner {
-  display: flex;
+  /* display: flex; */
   width: 1200px; 
   margin: 0 auto;
   padding: 0 15px;
@@ -167,35 +167,52 @@ body {
 /*Hero*/
 
 .hero {
-  align-content: center;
-  background-color: var(--secondary-background-color);
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  min-height: 600px;
+  margin-top: 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  /* text-align: center; */
   text-align: center;
+  background-color: var(--secondary-background-color);
 }
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
+  width: 696px;
+  height: 120px;
+  margin: 0 auto 30px auto;
+
+  /* margin-top: 0; */
+  /* margin-bottom: 30px; */
   font-size: 30px;
   font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  align-self: center;
   text-transform: uppercase;
-  /* text-align: center; */
+  text-align: center;
   color: var(--main-title-color);
 }
 .hero-button {
   display: inline-block;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
+  /* padding: 10px 32px; */
+  width: 200px;/* минимальная ширина кнопки, чб избежать переполнения*/
+  min-height: 50px;
   border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;/* минимальная ширина кнопки, чб избежать переполнения*/
+  
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  vertical-align: center;
+  /* vertical-align: center; */
   color: var(--main-title-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  border: transparent;
 }
 .hero-button:focus,
 .hero-button:hover {
