@@ -29,7 +29,9 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-
+ul {
+  list-style: none;
+}
 img {
   display: block;
   max-width: 100%;
@@ -67,7 +69,6 @@ body {
   
 }
  .conteiner {
-  /* display: flex; */
   width: 1200px; 
   margin: 0 auto;
   padding: 0 15px;
@@ -77,14 +78,11 @@ body {
  }
 /*=====HEADER======*/
 .header {
-  align-items: center;
   /* линия в хедере */
-  border: 1px solid #ECECEC; 
+  border-bottom: 1px solid #ECECEC; 
 }
 .header-container {
   display: flex; 
-  margin: 0 auto;
-  width: 1200px;
   align-items: center; 
 }
 /*Логотип в HEDER*/
@@ -165,8 +163,6 @@ body {
 /*======MAIN=====*/
 /*Hero*/
 .hero {
-  min-height: 600px;
-  margin-top: 0;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -205,24 +201,27 @@ body {
 
 /*Наши преимущества
 Внимание к деталям\Пунктуальность\Планирование\Современные технологии*/
-.benefits {
+/* .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 .benefits-title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 10px; 
   width: 270px;
   font-size: 14px;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 10px; 
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  /* text-align: left;  */
+  text-align: left; 
   text-transform: uppercase;
   color: var(--title-color);
-}
+} 
+/* .benefits-list {
+  display: flex;
+} */
 .benefits-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -240,7 +239,10 @@ body {
 }
 /*Чем мы занимаемся*/
 .work {
- padding-bottom: 94px;
+ padding-top: 0;
+}
+.work-list {
+  display: flex;
 }
 .work-title {
   margin-top: 0;
@@ -259,14 +261,10 @@ body {
 /*Наша команда*/
 .employees {
   background-color: var(--other-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .employees-item {
   background-color: var(--main-title-color);
-
 }
-/* Наша команда */
 .employees-title {
   /* margin: 0 0 50px 0; */
   margin-bottom: 50px;
@@ -277,6 +275,9 @@ body {
   text-align: center;
   color: var(--title-color);
 }
+.employees-list {
+  display: flex;
+}
 .employees-name {
   font-size: 16px;
   font-weight: 500;
@@ -285,7 +286,7 @@ body {
   color: var(--title-color);
 }
 .employees-position {
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -296,8 +297,14 @@ body {
 }
 .employees-img,
 .employees-name {
-  padding-bottom: 30px;
   text-align: center;
+}
+.employees-name {
+  margin-bottom: 10px;
+}
+.employees-img-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /*--FOOTER--*/
 .footer {
@@ -360,6 +367,7 @@ body {
 }
 /* Выровняли в ряд по центру*/
 .portfolio-list {
+  display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -398,6 +406,7 @@ body {
 /* flex-wrap задаёт правила вывода 
 flex-элементов —  в одну строку или в несколько */
   .cards {
+    display: flex;
     flex-wrap: wrap;
   }
   .cards-item {
@@ -407,10 +416,12 @@ flex-элементов —  в одну строку или в нескольк
     background-color: var(--main-title-color);
   }
   /* последние три */
-  .cards-item:nth-child(3n) {
+.cards-item:nth-child(3n) {
     margin-right: 0px;
   }
-
+.cards-item:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
 .cards-headline {
   margin-bottom: 4px;
   width: 322px;
