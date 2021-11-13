@@ -72,6 +72,9 @@ body {
   margin: 0 auto;
   padding: 0 15px;
  }
+ .section {
+  padding: 94px 0 94px 0;
+ }
 /*=====HEADER======*/
 .header {
   align-items: center;
@@ -352,8 +355,8 @@ body {
 /*=====РАЗМЕТКА ДЛЯ ПОРТФОЛИО========*/
 /*ККНОПКИ*/
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 /* Выровняли в ряд по центру*/
 .portfolio-list {
