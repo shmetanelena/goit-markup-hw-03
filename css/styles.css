@@ -268,8 +268,8 @@ body {
 }
 /* Наша команда */
 .employees-title {
-  margin: 0 0 50px 0;
-  /* margin-bottom: 50px; */
+  /* margin: 0 0 50px 0; */
+  margin-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
