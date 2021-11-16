@@ -31,6 +31,8 @@ p {
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 img {
   display: block;
@@ -201,10 +203,7 @@ body {
 
 /*Наши преимущества
 Внимание к деталям\Пунктуальность\Планирование\Современные технологии*/
-/* .benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-} */
+
 .benefits-title {
   margin-top: 0;
   margin-bottom: 10px; 
@@ -219,9 +218,7 @@ body {
   text-transform: uppercase;
   color: var(--title-color);
 } 
-/* .benefits-list {
-  display: flex;
-} */
+
 .benefits-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -407,7 +404,7 @@ body {
 flex-элементов —  в одну строку или в несколько */
   .cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
   }
   .cards-item {
     width: 370px;
